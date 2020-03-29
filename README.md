@@ -49,6 +49,7 @@ We created  `main_train.py` to train models. You can see there is a notation, `g
 Mem2Seq bAbI t1-t6:
 ```console
 ❱❱❱ python3 main_train.py -lr=0.001 -layer=1 -hdd=128 -dr=0.2 -dec=Mem2Seq -bsz=8 -ds=babi -t=1 
+python3 main_test.py -dec=Mem2Seq -path= -bsz=8 -ds=kvr
 ❱❱❱ python3 main_train.py -lr=0.001 -layer=1 -hdd=128 -dr=0.2 -dec=VanillaSeqToSeq -bsz=8 -ds=babi -t=1
 ❱❱❱ python3 main_train.py -lr=0.001 -layer=1 -hdd=128 -dr=0.2 -dec=LuongSeqToSeq -bsz=8 -ds=babi -t=1
 ❱❱❱ python3 main_train.py -lr=0.001 -layer=1 -hdd=128 -dr=0.2 -dec=PTRUNK -bsz=8 -ds=babi -t=1
